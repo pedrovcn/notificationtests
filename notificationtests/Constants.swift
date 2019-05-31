@@ -10,6 +10,6 @@ import Foundation
 
 struct Constants {
     struct URLs {
-        static let PDFsJSON = "http://localhost:8888/pedrovcn/pdfs/pdfs.json"
+        static let PDFsJSON = "https://api.myjson.com/bins/sza9b"
     }
 }
