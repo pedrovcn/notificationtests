@@ -14,6 +14,11 @@
 		E3A8ECBE229EC74400E5CF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */; };
 		E3A8ECC9229EC74400E5CF11 /* notificationtestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8ECC8229EC74400E5CF11 /* notificationtestsTests.swift */; };
 		E3A8ECD4229EC74400E5CF11 /* notificationtestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8ECD3229EC74400E5CF11 /* notificationtestsUITests.swift */; };
+		E3C673A6229F02F500E90005 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C673A5229F02F500E90005 /* PDF.swift */; };
+		E3C673A8229F0A5E00E90005 /* PDFProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C673A7229F0A5E00E90005 /* PDFProvider.swift */; };
+		E3C673AA229F0D0D00E90005 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C673A9229F0D0D00E90005 /* Constants.swift */; };
+		E3ECDD9F22A00C0C0067364E /* PDFListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECDD9E22A00C0C0067364E /* PDFListTableViewController.swift */; };
+		E3ECDDA122A00CDA0067364E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ECDDA022A00CDA0067364E /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		E3A8ECCF229EC74400E5CF11 /* notificationtestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = notificationtestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A8ECD3229EC74400E5CF11 /* notificationtestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationtestsUITests.swift; sourceTree = "<group>"; };
 		E3A8ECD5229EC74400E5CF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C673A5229F02F500E90005 /* PDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
+		E3C673A7229F0A5E00E90005 /* PDFProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFProvider.swift; sourceTree = "<group>"; };
+		E3C673A9229F0D0D00E90005 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E3ECDD9E22A00C0C0067364E /* PDFListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFListTableViewController.swift; sourceTree = "<group>"; };
+		E3ECDDA022A00CDA0067364E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,17 @@
 		E3A8ECB2229EC74300E5CF11 /* notificationtests */ = {
 			isa = PBXGroup;
 			children = (
+				E3A8ECBF229EC74400E5CF11 /* Info.plist */,
 				E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */,
+				E3C673A9229F0D0D00E90005 /* Constants.swift */,
 				E3A8ECB5229EC74300E5CF11 /* ViewController.swift */,
-				E3A8ECB7229EC74300E5CF11 /* Main.storyboard */,
 				E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */,
 				E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */,
-				E3A8ECBF229EC74400E5CF11 /* Info.plist */,
+				E3A8ECB7229EC74300E5CF11 /* Main.storyboard */,
+				E3ECDD9C22A009D40067364E /* Model */,
+				E3ECDD9D22A009E80067364E /* Providers */,
+				E3ECDD9E22A00C0C0067364E /* PDFListTableViewController.swift */,
+				E3ECDDA022A00CDA0067364E /* Utils.swift */,
 			);
 			path = notificationtests;
 			sourceTree = "<group>";
@@ -123,6 +138,22 @@
 				E3A8ECD5229EC74400E5CF11 /* Info.plist */,
 			);
 			path = notificationtestsUITests;
+			sourceTree = "<group>";
+		};
+		E3ECDD9C22A009D40067364E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3C673A5229F02F500E90005 /* PDF.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3ECDD9D22A009E80067364E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				E3C673A7229F0A5E00E90005 /* PDFProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C673AA229F0D0D00E90005 /* Constants.swift in Sources */,
 				E3A8ECB6229EC74300E5CF11 /* ViewController.swift in Sources */,
+				E3ECDD9F22A00C0C0067364E /* PDFListTableViewController.swift in Sources */,
+				E3ECDDA122A00CDA0067364E /* Utils.swift in Sources */,
+				E3C673A8229F0A5E00E90005 /* PDFProvider.swift in Sources */,
+				E3C673A6229F02F500E90005 /* PDF.swift in Sources */,
 				E3A8ECB4229EC74300E5CF11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

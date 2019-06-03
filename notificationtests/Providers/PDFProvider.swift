@@ -12,7 +12,7 @@ import AlamofireObjectMapper
 
 class PDFProvider {
     static func getPDFs(completionHandler: @escaping (Bool, Any) -> ()) {
-        Alamofire.request(Constants.URLs.PDFsJSON).responseObject(completionHandler: { (response: DataResponse<PDF>) in
+        Alamofire.request(Constants.URLs.PDFsJSON).responseArray(completionHandler: { (response: DataResponse<[PDF]>) in
             guard let result = response.result.value else {
                 print("Cannot retrieve JSON file from server.")
 
