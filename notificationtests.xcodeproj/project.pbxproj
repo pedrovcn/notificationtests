@@ -11,6 +11,7 @@
 		E32333AB22A554CE003A376A /* TableViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32333AA22A554CE003A376A /* TableViewUtils.swift */; };
 		E32333AD22A56351003A376A /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32333AC22A56351003A376A /* PDFViewController.swift */; };
 		E32333AF22A57BEF003A376A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32333AE22A57BEF003A376A /* Main.storyboard */; };
+		E32333B622A6B236003A376A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32333B522A6B236003A376A /* Images.xcassets */; };
 		E3A8ECB4229EC74300E5CF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */; };
 		E3A8ECBB229EC74400E5CF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */; };
 		E3A8ECBE229EC74400E5CF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */; };
@@ -55,6 +56,7 @@
 		E32333AA22A554CE003A376A /* TableViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUtils.swift; sourceTree = "<group>"; };
 		E32333AC22A56351003A376A /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		E32333AE22A57BEF003A376A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E32333B522A6B236003A376A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E3A8ECB0229EC74300E5CF11 /* notificationtests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notificationtests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				E3ECDD9D22A009E80067364E /* Providers */,
 				E32333B022A6A2CE003A376A /* VCs */,
 				E32333B122A6A2DB003A376A /* Utils */,
+				E32333B522A6B236003A376A /* Images.xcassets */,
 			);
 			path = notificationtests;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32333AF22A57BEF003A376A /* Main.storyboard in Resources */,
+				E32333B622A6B236003A376A /* Images.xcassets in Resources */,
 				E3A8ECBE229EC74400E5CF11 /* LaunchScreen.storyboard in Resources */,
 				E3A8ECBB229EC74400E5CF11 /* Assets.xcassets in Resources */,
 			);
@@ -637,7 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = notificationtests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/notificationtests/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,7 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = notificationtests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/notificationtests/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
