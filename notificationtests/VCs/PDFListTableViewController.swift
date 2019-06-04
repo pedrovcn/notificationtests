@@ -40,6 +40,16 @@ class PDFListTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
+
+        guard let _ = pdfList[indexPath.row].location else {
+            return
+        }
+
+        self.performSegue(withIdentifier: "showPDF", sender: pdfList[indexPath.row])
+    }
+
     @objc fileprivate func loadPDFs() {
         PDFProvider.getPDFs() { success, result in
             guard success else {
@@ -60,5 +70,16 @@ class PDFListTableViewController: UITableViewController {
     fileprivate func addRefreshControl() {
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(loadPDFs), for: .valueChanged)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPDF" {
+            let destination = segue.destination as! PDFViewController
+
+            let pdf = sender as! PDF
+
+            destination.url = URL(string: pdf.location!)
+            destination.name = pdf.name
+        }
     }
 }

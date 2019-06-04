@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		12A56BE5E344D79E6BA255FC /* Pods_notificationtestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1159D74230BCBD8269BB63F9 /* Pods_notificationtestsTests.framework */; };
 		E32333AB22A554CE003A376A /* TableViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32333AA22A554CE003A376A /* TableViewUtils.swift */; };
+		E32333AD22A56351003A376A /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32333AC22A56351003A376A /* PDFViewController.swift */; };
+		E32333AF22A57BEF003A376A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32333AE22A57BEF003A376A /* Main.storyboard */; };
 		E3A8ECB4229EC74300E5CF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */; };
-		E3A8ECB6229EC74300E5CF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8ECB5229EC74300E5CF11 /* ViewController.swift */; };
-		E3A8ECB9229EC74300E5CF11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A8ECB7229EC74300E5CF11 /* Main.storyboard */; };
 		E3A8ECBB229EC74400E5CF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */; };
 		E3A8ECBE229EC74400E5CF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */; };
 		E3A8ECC9229EC74400E5CF11 /* notificationtestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8ECC8229EC74400E5CF11 /* notificationtestsTests.swift */; };
@@ -53,10 +53,10 @@
 		B75CD18FD03C370E82120727 /* Pods-notificationtestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notificationtestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notificationtestsTests/Pods-notificationtestsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0292289EEBECF869AD0F17 /* Pods-notificationtests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notificationtests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notificationtests/Pods-notificationtests.debug.xcconfig"; sourceTree = "<group>"; };
 		E32333AA22A554CE003A376A /* TableViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUtils.swift; sourceTree = "<group>"; };
+		E32333AC22A56351003A376A /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		E32333AE22A57BEF003A376A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E3A8ECB0229EC74300E5CF11 /* notificationtests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notificationtests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3A8ECB5229EC74300E5CF11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3A8ECB8229EC74300E5CF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A8ECBD229EC74400E5CF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A8ECBF229EC74400E5CF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +114,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E32333B022A6A2CE003A376A /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				E3ECDD9E22A00C0C0067364E /* PDFListTableViewController.swift */,
+				E32333AC22A56351003A376A /* PDFViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		E32333B122A6A2DB003A376A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E3C673A9229F0D0D00E90005 /* Constants.swift */,
+				E3ECDDA022A00CDA0067364E /* Utils.swift */,
+				E32333AA22A554CE003A376A /* TableViewUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E32333B222A6A2E9003A376A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E32333AE22A57BEF003A376A /* Main.storyboard */,
+				E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E32333B322A6A2F3003A376A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				E3A8ECBF229EC74400E5CF11 /* Info.plist */,
+				E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */,
+				E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		E3A8ECA7229EC74300E5CF11 = {
 			isa = PBXGroup;
 			children = (
@@ -139,18 +177,12 @@
 		E3A8ECB2229EC74300E5CF11 /* notificationtests */ = {
 			isa = PBXGroup;
 			children = (
-				E3A8ECBF229EC74400E5CF11 /* Info.plist */,
-				E3A8ECB3229EC74300E5CF11 /* AppDelegate.swift */,
-				E3C673A9229F0D0D00E90005 /* Constants.swift */,
-				E3A8ECB5229EC74300E5CF11 /* ViewController.swift */,
-				E3A8ECBA229EC74400E5CF11 /* Assets.xcassets */,
-				E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */,
-				E3A8ECB7229EC74300E5CF11 /* Main.storyboard */,
+				E32333B322A6A2F3003A376A /* Supporting */,
+				E32333B222A6A2E9003A376A /* Storyboards */,
 				E3ECDD9C22A009D40067364E /* Model */,
 				E3ECDD9D22A009E80067364E /* Providers */,
-				E3ECDD9E22A00C0C0067364E /* PDFListTableViewController.swift */,
-				E3ECDDA022A00CDA0067364E /* Utils.swift */,
-				E32333AA22A554CE003A376A /* TableViewUtils.swift */,
+				E32333B022A6A2CE003A376A /* VCs */,
+				E32333B122A6A2DB003A376A /* Utils */,
 			);
 			path = notificationtests;
 			sourceTree = "<group>";
@@ -307,9 +339,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32333AF22A57BEF003A376A /* Main.storyboard in Resources */,
 				E3A8ECBE229EC74400E5CF11 /* LaunchScreen.storyboard in Resources */,
 				E3A8ECBB229EC74400E5CF11 /* Assets.xcassets in Resources */,
-				E3A8ECB9229EC74300E5CF11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +461,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32333AD22A56351003A376A /* PDFViewController.swift in Sources */,
 				E3C673AA229F0D0D00E90005 /* Constants.swift in Sources */,
-				E3A8ECB6229EC74300E5CF11 /* ViewController.swift in Sources */,
 				E3ECDD9F22A00C0C0067364E /* PDFListTableViewController.swift in Sources */,
 				E32333AB22A554CE003A376A /* TableViewUtils.swift in Sources */,
 				E3ECDDA122A00CDA0067364E /* Utils.swift in Sources */,
@@ -472,14 +504,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E3A8ECB7229EC74300E5CF11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3A8ECB8229EC74300E5CF11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3A8ECBC229EC74400E5CF11 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
